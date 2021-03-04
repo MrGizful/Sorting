@@ -3,12 +3,13 @@
 #include "SelectionSort.h"
 #include "InsertionSort.h"
 #include "ShellSort.h"
+#include "MergeSort.h"
 
 void writeResult(std::vector<int>, std::string);
 
 int main()
 {
-    std::vector<int> inputArray = { 1, 8, 2, 10, 7, 3, 15, 0, 6 };
+    std::vector<int> inputArray = { 99,	3, 46, 55, 96, 32, 3, 91, 72, 51, 96, 64, 28, 15, 91, 68, 58, 55, 47, 51, 75, 36, 14, 57, 23 };
 
     BubbleSort bubbleSort;
     writeResult(bubbleSort.sort(inputArray), "Bubble");
@@ -22,6 +23,9 @@ int main()
 
     ShellSort shellSort;
     writeResult(shellSort.sort(inputArray), "Shell");
+
+    MergeSort mergeSort;
+    writeResult(mergeSort.sort(inputArray), "Merge");
 }
 
 void writeResult(std::vector<int> array, std::string type)
