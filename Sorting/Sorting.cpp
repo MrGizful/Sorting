@@ -4,6 +4,7 @@
 #include "InsertionSort.h"
 #include "ShellSort.h"
 #include "MergeSort.h"
+#include "HeapSort.h"
 
 void writeResult(std::vector<int>, std::string);
 
@@ -26,6 +27,9 @@ int main()
 
     MergeSort mergeSort;
     writeResult(mergeSort.sort(inputArray), "Merge");
+
+    HeapSort heapSort;
+    writeResult(heapSort.sort(inputArray), "Heap");
 }
 
 void writeResult(std::vector<int> array, std::string type)
