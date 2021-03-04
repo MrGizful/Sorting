@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include "BubbleSort.h"
 #include "SelectionSort.h"
+#include "InsertionSort.h"
 
 void writeResult(std::vector<int>, std::string);
 
@@ -14,6 +15,9 @@ int main()
 
     SelectionSort selectSort;
     writeResult(selectSort.sort(inputArray), "Selection");
+
+    InsertionSort insSort;
+    writeResult(insSort.sort(inputArray), "Insertion");
 }
 
 void writeResult(std::vector<int> array, std::string type)
