@@ -2,6 +2,7 @@
 #include "BubbleSort.h"
 #include "SelectionSort.h"
 #include "InsertionSort.h"
+#include "ShellSort.h"
 
 void writeResult(std::vector<int>, std::string);
 
@@ -18,6 +19,9 @@ int main()
 
     InsertionSort insSort;
     writeResult(insSort.sort(inputArray), "Insertion");
+
+    ShellSort shellSort;
+    writeResult(shellSort.sort(inputArray), "Shell");
 }
 
 void writeResult(std::vector<int> array, std::string type)
