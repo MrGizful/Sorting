@@ -9,6 +9,7 @@ int main()
 
     BubbleSort bubbleSort;
     writeResult(bubbleSort.sort(inputArray), "Bubble");
+    writeResult(bubbleSort.improvedSort(inputArray), "Improved bubble");
 }
 
 void writeResult(std::vector<int> array, std::string type)
