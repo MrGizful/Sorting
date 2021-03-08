@@ -6,6 +6,7 @@
 #include "MergeSort.h"
 #include "HeapSort.h"
 #include "QuickSort.h"
+#include "CountingSort.h"
 
 void writeResult(std::vector<int>, std::string);
 
@@ -34,6 +35,9 @@ int main()
 
     QuickSort quickSort;
     writeResult(quickSort.sort(inputArray), "Quick");
+
+    CountingSort countingSort;
+    writeResult(countingSort.sort(inputArray, 99), "Counting");
 }
 
 void writeResult(std::vector<int> array, std::string type)
