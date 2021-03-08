@@ -10,6 +10,7 @@ class RadixSort
 public:
 	//Worst case - O(digits*n)
 	//Worst space case - O(digits + n)
+	//Stable
 	std::vector<int> sort(std::vector<int> array, int digits);
 };
 

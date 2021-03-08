@@ -20,6 +20,7 @@ class HeapSort
 public:
 	//Best, average and worst cases - O(n log(n))
 	//Worst space case - O(1) auxiliary
+	//Unstable
 	std::vector<int> sort(std::vector<int> array);
 };
 

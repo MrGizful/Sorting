@@ -12,6 +12,7 @@ class QuickSort
 public:
 	//Best nad average cases - O(n log(n)), worst case - O(n^2)
 	//Worst space case - O(1)
+	//Stable depends on the implementation
 	std::vector<int> sort(std::vector<int> array);
 };
 
