@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <iomanip>
 #include "BubbleSort.h"
 #include "SelectionSort.h"
 #include "InsertionSort.h"
@@ -7,6 +8,7 @@
 #include "HeapSort.h"
 #include "QuickSort.h"
 #include "CountingSort.h"
+#include "RadixSort.h"
 
 void writeResult(std::vector<int>, std::string);
 
@@ -38,10 +40,14 @@ int main()
 
     CountingSort countingSort;
     writeResult(countingSort.sort(inputArray, 99), "Counting");
+
+    RadixSort radixSort;
+    writeResult(radixSort.sort(inputArray, 2), "Radix");
 }
 
 void writeResult(std::vector<int> array, std::string type)
 {
+    std::cout << std::setw(15);
     std::cout << type << " sort: ";
     for (int i = 0; i < array.size(); i++)
         std::cout << array[i] << " ";
